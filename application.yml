@@ -1,6 +1,6 @@
 
 ---
-aleph:
+giu:
   port:
     oauth: 18080
     finance: 18090
@@ -34,11 +34,11 @@ aleph:
 
   db:
     host: db.turner.dev.redb.ee
-    sid: ALEPHDBD1 
+    sid: GIUDBD1 
 
   oauth:
-    context-path: /aleph-oauth
-    uri: http://localhost:${aleph.port.oauth}${aleph.oauth.context-path}
+    context-path: /giu-oauth
+    uri: http://localhost:${giu.port.oauth}${giu.oauth.context-path}
     redis: 
       enabled: false
       host: localhost
@@ -52,7 +52,7 @@ ldap:
 ---
 spring:
   datasource:
-    url: jdbc:oracle:thin:@${aleph.db.host}:${aleph.port.commondb}/${aleph.db.sid}
+    url: jdbc:oracle:thin:@${giu.db.host}:${giu.port.commondb}/${giu.db.sid}
     username: proxy
     password: proxy
     driver-class-name: oracle.jdbc.driver.OracleDriver
@@ -64,9 +64,9 @@ spring:
 
   oauth2:
     resource:
-      userInfoUri: ${aleph.oauth.uri}/user
+      userInfoUri: ${giu.oauth.uri}/user
   auth:
-    serverurl: ${aleph.oauth.uri}/oauth/check_token
+    serverurl: ${giu.oauth.uri}/oauth/check_token
 
 ---
 management:
