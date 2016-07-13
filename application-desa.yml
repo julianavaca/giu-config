@@ -5,14 +5,8 @@ giu:
     oauth: 18080
     config: 18190
 
-    commondb: 1521
-
   frontport:
     oauth: 18082
-
-  db:
-    host: repo.dev.redbee.io
-    sid: GIUDBD1
 
   oauth:
     context-path: /giu-oauth
