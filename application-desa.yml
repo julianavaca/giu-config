@@ -37,7 +37,7 @@ aleph:
     sid: ALEPHDBD1 
 
   oauth:
-    context-path: /aleph-oauth
+    context-path: /giu-oauth
     uri: http://argalephdockerd1:${aleph.port.oauth}${aleph.oauth.context-path}
     redis: 
       enabled: false

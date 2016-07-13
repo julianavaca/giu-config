@@ -33,7 +33,7 @@ giu:
     branding: 18202
 
   db:
-    host: db.turner.dev.redb.ee
+    host: repo.dev.redbee.io
     sid: GIUDBD1 
 
   oauth:
